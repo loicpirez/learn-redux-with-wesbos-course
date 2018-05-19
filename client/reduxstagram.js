@@ -1,3 +1,6 @@
-// let's go!
+import React from 'react'
+import { render } from 'react-dom'
+// Import css with webpack
+import css from './styles/style.styl'
 
-console.log('test')
+render(<p>Hi!</p>, document.getElementById('root'))

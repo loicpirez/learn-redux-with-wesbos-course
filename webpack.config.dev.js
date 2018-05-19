@@ -21,8 +21,11 @@ module.exports = {
       // js
       {
         test: /\.js$/,
-        loaders: ['babel'],
-        include: path.join(__dirname, 'client')
+        loaders: ['babel-loader'],
+        include: path.join(__dirname, 'client'),
+        options: {
+          presets: ['@babel/preset-env', 'react', 'es2017']
+        }
       },
       // CSS
       {
