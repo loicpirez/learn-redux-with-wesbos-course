@@ -5,7 +5,7 @@ module.exports = {
   devtool: 'source-map',
   entry: [
     'webpack-hot-middleware/client',
-    './client/reduxstagram'
+    './client/reduxstagram.jsx'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -20,7 +20,7 @@ module.exports = {
     loaders: [
       // js
       {
-        test: /\.js$/,
+        test: /.jsx?$/,
         loaders: ['babel-loader'],
         include: path.join(__dirname, 'client'),
         options: {
