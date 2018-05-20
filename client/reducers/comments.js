@@ -5,6 +5,18 @@
 // 2. copy of current state
 
 function comments (state = [], action) {
+  switch (action.type) {
+    case 'addComment':
+      console.log('ADD_COMMENTS')
+      // return the updated state
+      break
+    case 'removeComment':
+      console.log('REMOVE_COMMENTS')
+      // return the updated state
+      break
+    default:
+      return state
+  }
   return state
 }
 
